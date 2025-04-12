@@ -69,6 +69,8 @@ Edit
 CREATE POLICY "Users can manage their tasks"
 ON tasks FOR ALL
 USING (auth.uid() = user_id);
+
+
 4. Add Environment Variables
 Create a .env file in the root of your project:
 
@@ -78,6 +80,9 @@ Edit
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-key-here
 Replace the above with values from your Supabase Project Settings → API
+
+
+
 
 5. Run the App
 bash
